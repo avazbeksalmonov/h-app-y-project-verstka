@@ -13,11 +13,16 @@
     margin: 0 auto;
 }
 
+.btn {
+    display: none;
+}
+
 
 /* nav boshlanishi */
 
 nav {
     position: fixed;
+    z-index: 999;
     top: 0;
     width: 100%;
     padding: 10px 100px;
@@ -66,6 +71,10 @@ nav {
     justify-content: space-around;
 }
 
+.main-header__right {
+    width: 40%;
+}
+
 .main-top img {
     width: 120px;
     height: 40px;
@@ -88,6 +97,7 @@ nav {
 }
 
 .main-header__left {
+    width: 40%;
     padding-top: 35px;
     display: flex;
     flex-direction: column;
@@ -101,6 +111,7 @@ nav {
 
 .buttons button {
     width: 130px;
+    border: none;
     height: 27px;
     background: #222222;
     border-radius: 4px;
@@ -124,7 +135,7 @@ nav {
     height: 100vh; */
     background: #222222;
     position: relative;
-    height: 1338px;
+    /* height: 1338px; */
     left: 0%;
     right: 0%;
     top: -156px;
@@ -149,31 +160,49 @@ nav {
     border-radius: 20px;
 }
 
+.card-item .card-img:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.card-item {
+    overflow: hidden;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    padding: 20px;
+}
+
+.card-text img {
+    position: relative;
+    top: -10%;
 }
 
 .card-img {
+    width: 100%;
+    height: 55%;
     text-align: center;
-    height: 260px;
-    z-index: -1;
-    overflow: hidden;
+}
+
+.card-text h2 {
+    color: #0278ed;
+    font-size: 20px;
+}
+
+.card-text p {
+    font-size: 12px;
 }
 
 .card-text {
-    z-index: 999;
-    height: 160px;
-    background: #000;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 45%;
     background: #f2f2f2;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 20px 20px;
-}
-
-.card-img img {
-    height: 420px;
-    text-align: center;
+    border-radius: 0 0 20px 20px;
 }
 
 
@@ -181,3 +210,445 @@ nav {
 
 
 /* header style tugashi */
+
+
+/* section style boshlanishi */
+
+.nums {
+    width: 100%;
+    height: 22vh;
+    position: relative;
+    top: -156px;
+    background: #ff5437;
+}
+
+.numbers {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.num1 span {
+    color: #ffffff;
+    font-size: 60px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.num1 p {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.num2 span {
+    color: #ffffff;
+    font-size: 60px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.num2 p {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.num3 span {
+    color: #ffffff;
+    font-size: 60px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.num3 p {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* section style tugashi */
+
+
+/* blog section boshlanishi */
+
+section {
+    width: 100%;
+    position: relative;
+    top: -156px;
+}
+
+.blog {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.top-blog {
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.blog-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-text {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 100px 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blog-text span {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.blog-text p {
+    font-size: 30px;
+}
+
+.blog-text h6 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #666666;
+}
+
+
+/* blog section tugashi */
+
+
+/* mode section boshlanishi */
+
+.mode {
+    width: 100%;
+    height: 90vh;
+    background: #222222;
+    position: relative;
+    top: -156px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text span {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.text h6 {
+    font-size: 12px;
+}
+
+.img {
+    text-align: center;
+}
+
+.img img {
+    width: 350px;
+}
+
+
+/* mode section tugashi */
+
+
+/* card section boshlanishi*/
+
+.cards-title {
+    margin-top: -90px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards-title span {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.cards-title p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.cards-title h6 {
+    font-size: 12px;
+}
+
+.card-items {
+    width: 300px;
+    height: 300px;
+    background: #f2f2f2;
+    border-radius: 20px;
+}
+
+.cards-1 {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-items {
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    color: #0278ed;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-items p {
+    text-align: center;
+    color: #0278ed;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.card-items h6 {
+    color: #000;
+    margin: 20px;
+}
+
+.card-items button {
+    width: 120px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    height: 30px;
+    border: none;
+    background: #0278ed;
+    border-radius: 4px;
+}
+
+
+/* card section tugashi */
+
+
+/* testimionals style boshlanishi */
+
+.testimionals {
+    width: 100%;
+    padding-bottom: 20px;
+    /* height: 70vh; */
+    background: #f2f2f2;
+    border-radius: 0px;
+}
+
+.test-title {
+    padding: 15px;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.test-title span {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.test-title p {
+    font-size: 28px;
+}
+
+.test-title h6 {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.test-container {
+    /* text-align: center; */
+    padding: 15px 0;
+    gap: 20px;
+    padding-left: 50px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.test-item {
+    width: 250px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 250px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.test-item span {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.test-img {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.test-img p {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* testimionals style tugashi */
+
+
+/* story section boshlanishi */
+
+.story {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-container {
+    display: flex;
+    padding: 40px;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.story-container span {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.story-container p {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.story-container h6 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #666666;
+}
+
+.story-container img {
+    text-align: center;
+}
+
+
+/* story section tugashi */
+
+.faq {
+    width: 100%;
+    padding: 30px;
+    background: #e5e5e5;
+    border-radius: 0px;
+}
+
+.faq-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-title span {
+    font-size: 20px;
+}
+
+.faq-title p {
+    font-size: 14px;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.faq-item {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    height: 150px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-item span {
+    font-size: 16px;
+}
+
+.faq-item p {
+    font-size: 16px;
+}
+
+
+/* footer style boshlanishi */
+
+footer {
+    width: 100%;
+    height: 40vh;
+    background: #fff;
+}
+
+.footer-container {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-img img {
+    width: 100px;
+}
+
+.footer-social a {
+    margin: 5px;
+}
+
+.footer-social a {
+    text-decoration: none;
+}
+
+.footer-text {
+    font-size: 18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-text span {
+    color: #666666;
+}
+
+
+/* footer style tugashi */

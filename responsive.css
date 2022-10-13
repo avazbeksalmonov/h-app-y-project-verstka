@@ -1,0 +1,127 @@
+@media screen and (max-width: 1049px) {
+    .navbar-nav a {
+        display: none;
+    }
+    .navbar-nav button {
+        display: none;
+    }
+    .logo {
+        position: relative;
+        left: -15px;
+    }
+    .btn {
+        position: relative;
+        left: 40px;
+    }
+    nav {
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .logo {
+        margin-left: -35px;
+    }
+    .btn {
+        display: block;
+    }
+    .main-header {
+        flex-direction: column;
+    }
+    .main-header__left {
+        text-align: center;
+        width: 100%;
+    }
+    .main-header__right {
+        text-align: center;
+        padding-top: 35px;
+        width: 100%;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .card-item {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .card-item .card-img {
+        width: 100%;
+    }
+    .card-text {
+        width: 100%;
+    }
+    .nums {
+        height: 60vh;
+    }
+    .numbers {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding-top: 18px;
+    }
+    .blog-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .blog-img {
+        text-align: center;
+    }
+    .blog-img img {
+        text-align: center;
+        width: 60%;
+        height: 330px;
+    }
+    .blog-top {
+        flex-direction: column;
+    }
+    .cards-1 {
+        width: 90%;
+        /* margin: 0 auto; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-items {
+        width: 100%;
+    }
+    .test-container {
+        width: 90%;
+        gap: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .test-item {
+        width: 100%;
+    }
+    .faq-container {
+        display: grid;
+        padding-top: 12px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .faq-item {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+        height: 150px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .faq-item p {
+        font-size: 12px;
+    }
+    footer {
+        height: 33vh;
+    }
+    .footer-text {
+        font-size: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+
+/* @media screen and (max-width: 340px) {
+    .main-header__right img {
+        width: 330px;
+    }
+} */
