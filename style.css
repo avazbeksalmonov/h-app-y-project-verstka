@@ -75,6 +75,10 @@ nav {
     width: 40%;
 }
 
+.main-header__right img {
+    border-radius: 36px 33px 0 0;
+}
+
 .main-top img {
     width: 120px;
     height: 40px;
